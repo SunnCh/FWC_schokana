@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rush Project</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="min-h-screen flex flex-col justify-between p-6">
+
+    <!-- ==========================================
+         1. TWO-TONE BACKGROUND 
+    =========================================== -->
+    <div class="fixed inset-0 -z-30 flex flex-col md:flex-row pointer-events-none">
+        <!-- ฝั่งซ้าย: สีฟ้าอ่อน (#E0F2FE) -->
+        <div class="w-full md:w-1/2 h-1/2 md:h-full bg-[#E0F2FE]"></div>
+        <!-- ฝั่งขวา: สีชมพูอ่อน (#FCE7F3) -->
+        <div class="w-full md:w-1/2 h-1/2 md:h-full bg-[#FCE7F3]"></div>
+    </div>
+
+
+    <!-- ==========================================
+         2. FULL-SPREAD SCRAPBOOK ELEMENTS 
+    =========================================== -->
+    <div class="fixed inset-0 overflow-hidden pointer-events-none -z-20">
+        <div class="absolute top-6 left-[5%] w-12 h-12 md:w-16 md:h-16 rounded-full bg-[#FFD23D] comic-border comic-shadow transform -rotate-12 opacity-90"></div>
+        <div class="absolute top-12 left-[28%] w-10 h-10 bg-[#FF3D7F] comic-border transform rotate-12 opacity-85"></div>
+        <div class="absolute top-6 left-[50%] -translate-x-1/2 text-4xl font-black text-[#171519] opacity-80 select-none">✦</div>
+        <div class="absolute top-16 right-[28%] w-9 h-9 rounded-full bg-[#37C48F] comic-border opacity-85"></div>
+        <div class="absolute top-8 right-[5%] w-14 h-14 md:w-16 md:h-16 bg-[#FF3D7F] comic-border comic-shadow transform rotate-12 opacity-90"></div>
+
+        <div class="absolute top-[25%] left-[10%] w-9 h-9 bg-[#3D6DFF] comic-border transform rotate-45 opacity-85"></div>
+        <div class="absolute top-[22%] left-[45%] w-12 h-12 rounded-full bg-[#FFD23D] comic-border comic-shadow transform -rotate-12 opacity-80"></div>
+        <div class="absolute top-[26%] right-[12%] text-3xl font-black text-[#3D6DFF] transform rotate-45 select-none opacity-80">✖</div>
+
+        <div class="absolute top-[45%] left-[3%] w-12 h-12 bg-[#3D6DFF] comic-border comic-shadow transform rotate-45 opacity-90"></div>
+        <div class="absolute top-[48%] left-[25%] text-3xl font-black text-[#FF3D7F] select-none opacity-80">★</div>
+        <div class="absolute top-[42%] left-[50%] -translate-x-1/2 w-14 h-14 bg-[#37C48F] comic-border comic-shadow transform -rotate-6 opacity-80"></div>
+        <div class="absolute top-[46%] right-[25%] w-10 h-10 rounded-full bg-[#FFD23D] comic-border opacity-85"></div>
+        <div class="absolute top-[45%] right-[4%] w-14 h-14 rounded-full bg-[#37C48F] comic-border comic-shadow transform -rotate-12 opacity-90"></div>
+
+        <div class="absolute top-[65%] left-[12%] text-4xl font-black text-[#171519] transform -rotate-12 select-none opacity-80">✦</div>
+        <div class="absolute top-[68%] left-[48%] -translate-x-1/2 w-10 h-10 bg-[#FF3D7F] comic-border transform rotate-45 opacity-80"></div>
+        <div class="absolute top-[64%] right-[10%] text-3xl font-black text-[#171519] select-none opacity-80">✖</div>
+
+        <div class="absolute bottom-12 left-[5%] w-14 h-14 md:w-16 md:h-16 bg-[#FF3D7F] comic-border comic-shadow transform -rotate-12 opacity-90"></div>
+        <div class="absolute bottom-8 left-[30%] w-12 h-12 rounded-full bg-[#3D6DFF] comic-border transform rotate-12 opacity-85"></div>
+        <div class="absolute bottom-10 left-[50%] -translate-x-1/2 text-4xl font-black text-[#37C48F] select-none opacity-80">★</div>
+        <div class="absolute bottom-16 right-[28%] w-10 h-10 bg-[#FFD23D] comic-border transform rotate-12 opacity-85"></div>
+        <div class="absolute bottom-6 right-[4%] w-12 h-12 md:w-16 md:h-16 bg-[#FFD23D] comic-border comic-shadow transform rotate-45 opacity-90"></div>
+    </div>
+
+
+    <!-- ==========================================
+         3. HEADER
+    =========================================== -->
+    <header class="text-center my-6 relative z-10">
+        <div class="inline-block bg-[#FFD23D] comic-border comic-shadow-lg p-5 rounded-2xl transform -rotate-1">
+            <h1 class="text-4xl md:text-6xl uppercase tracking-wider text-[#171519]">Rush Project</h1>
+            <p class="text-lg font-bold mt-1 text-[#FF3D7F]">★ PISCINE DISCOVERY ★</p>
+        </div>
+    </header>
+
+
+    <!-- ==========================================
+         4. MAIN CARDS 
+    =========================================== -->
+    <main class="max-w-7xl mx-auto w-full grid grid-cols-1 md:grid-cols-2 my-auto relative z-10 px-4 gap-8">
+        
+        <!-- ฝั่งซ้าย: การ์ด Player 1 -->
+        <div class="flex justify-center w-full">
+            <div class="relative max-w-md w-full group">
+                <!-- รูป PNG หน้าใหญ่ (อยู่ชั้นหลัง z-0) -->
+                <img src="img/sun.png" alt="Player 1 Avatar" class="peek-avatar-behind">
+
+                <!-- ตัวการ์ดหลัก (อยู่ชั้นหน้า z-10 บังส่วนล่างของรูปภาพ) -->
+                <div class="w-full bg-[#FF3D7F] comic-border comic-shadow-lg rounded-2xl p-6 text-white flex flex-col justify-between relative z-10">
+                    <div>
+                        <span class="bg-[#171519] text-[#FFD23D] px-3 py-1 text-sm font-bold rounded-md comic-border">PLAYER 1</span>
+                        <h2 class="text-4xl my-4 text-[#FFF6E7]">Developer A</h2>
+                        <p class="font-medium text-[#FFF6E7]/90 mb-6"></p>
+                    </div>
+                    <a href="portfolio-1.html" class="block text-center bg-[#FFD23D] text-[#171519] font-bold text-xl py-3 px-6 rounded-xl comic-border comic-shadow">
+                        ENTER PORTFOLIO ➔
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <!-- ฝั่งขวา: การ์ด Player 2 -->
+        <div class="flex justify-center w-full">
+            <div class="relative max-w-md w-full group">
+                <!-- รูป PNG หน้าใหญ่ (อยู่ชั้นหลัง z-0) -->
+                <img src="img/me.png" alt="Player 2 Avatar" class="peek-avatar-behind">
+
+                <!-- ตัวการ์ดหลัก (อยู่ชั้นหน้า z-10 บังส่วนล่างของรูปภาพ) -->
+                <div class="w-full bg-[#3D6DFF] comic-border comic-shadow-lg rounded-2xl p-6 text-white flex flex-col justify-between relative z-10">
+                    <div>
+                        <span class="bg-[#171519] text-[#37C48F] px-3 py-1 text-sm font-bold rounded-md comic-border">PLAYER 2</span>
+                        <h2 class="text-4xl my-4 text-[#FFF6E7]">ธนกฤต ศรีดาวเรือง</h2>
+                        <p class="font-medium text-[#FFF6E7]/90 mb-6"></p>
+                    </div>
+                    <a href="portfolio-2.html" class="block text-center bg-[#37C48F] text-[#171519] font-bold text-xl py-3 px-6 rounded-xl comic-border comic-shadow">
+                        ENTER PORTFOLIO ➔
+                    </a>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

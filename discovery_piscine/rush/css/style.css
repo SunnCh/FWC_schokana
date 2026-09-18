@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@400;600;700;800&family=Lilita+One&family=Space+Grotesk:wght@500;700&display=swap');
+
+:root {
+  --bg-cream: #f8e8c9;
+  --ink-black: #171519;
+  --pink-pop: #FF3D7F;
+  --blue-pop: #3D6DFF;
+  --yellow-pop: #FFD23D;
+  --mint-pop: #37C48F;
+}
+
+body {
+  font-family: 'Kanit', 'Space Grotesk', sans-serif;
+  background-color: var(--bg-cream);
+  color: var(--ink-black);
+}
+
+h1, h2, h3, h4, .font-heading {
+  font-family: 'Kanit', 'Lilita One', cursive;
+  font-weight: 700;
+}
+
+/* Comic Neobrutalism Utilities */
+.comic-border {
+  border: 4px solid var(--ink-black);
+}
+
+.comic-shadow {
+  box-shadow: 5px 5px 0px 0px var(--ink-black);
+  transition: all 0.15s ease-in-out;
+}
+
+.comic-shadow-lg {
+  box-shadow: 8px 8px 0px 0px var(--ink-black);
+  transition: all 0.15s ease-in-out;
+}
+
+.comic-shadow:hover, .comic-shadow-lg:hover {
+  transform: translate(-3px, -3px);
+  box-shadow: 8px 8px 0px 0px var(--ink-black);
+}
+
+.comic-shadow:active, .comic-shadow-lg:active {
+  transform: translate(2px, 2px);
+  box-shadow: 2px 2px 0px 0px var(--ink-black);
+}
+
+/* Speech Bubble Tail */
+.speech-bubble {
+  position: relative;
+}
+.speech-bubble::after {
+  content: '';
+  position: absolute;
+  bottom: -15px;
+  left: 30px;
+  border-width: 15px 15px 0 0;
+  border-style: solid;
+  border-color: var(--ink-black) transparent;
+  display: block;
+  width: 0;
+}
+
+/* ==========================================
+   รูป PNG สไลด์โผล่ขึ้นมาจากด้านหลังการ์ด
+=========================================== */
+.peek-avatar-behind {
+  position: absolute;
+  left: 50%;
+  top: 20px; /* วางจุดตั้งต้นให้อยู่ต่ำลงมาจากขอบบนการ์ด */
+  width: 85%;
+  max-width: 300px;
+  height: auto;
+  z-index: 0; /* อยู่ชั้นหลังสุด (การ์ดหลักบังอยู่ด้านหน้า) */
+  
+  /* เริ่มต้น: ซ่อนอยู่หลังการ์ดสมบูรณ์แบบ */
+  opacity: 0;
+  transform: translateX(-50%) translateY(40px) scale(0.85);
+  
+  /* เอฟเฟกต์การสไลด์เด้งขึ้นนุ่มนวล */
+  transition: transform 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275), 
+              opacity 0.25s ease;
+              
+  pointer-events: none;
+  filter: drop-shadow(4px 4px 0px #171519);
+}
+
+/* เมื่อ Hover: สไลด์ดันขึ้นมาจากข้างหลังการ์ด */
+.group:hover .peek-avatar-behind {
+  opacity: 1;
+  transform: translateX(-50%) translateY(-110px) scale(1); /* ปรับระยะดันขึ้นตามความสูงที่ต้องการ */
+}

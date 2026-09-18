@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - ซัน โชคอนันต์</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="text-[#171519]">
+
+<div class="fixed inset-0 overflow-hidden pointer-events-none -z-20">
+    
+    <!-- --- แถบบน --- -->
+    <div class="absolute top-6 left-[5%] w-12 h-12 md:w-16 md:h-16 rounded-full bg-[#FFD23D] comic-border comic-shadow transform -rotate-12 opacity-90"></div>
+    <div class="absolute top-12 left-[28%] w-10 h-10 bg-[#FF3D7F] comic-border transform rotate-12 opacity-85"></div>
+    <div class="absolute top-6 left-[50%] -translate-x-1/2 text-4xl font-black text-[#171519] opacity-80 select-none">✦</div>
+    <div class="absolute top-16 right-[28%] w-9 h-9 rounded-full bg-[#37C48F] comic-border opacity-85"></div>
+    <div class="absolute top-8 right-[5%] w-14 h-14 md:w-16 md:h-16 bg-[#FF3D7F] comic-border comic-shadow transform rotate-12 opacity-90"></div>
+
+    <!-- --- แถบกลางบน --- -->
+    <div class="absolute top-[25%] left-[10%] w-9 h-9 bg-[#3D6DFF] comic-border transform rotate-45 opacity-85"></div>
+    <div class="absolute top-[22%] left-[45%] w-12 h-12 rounded-full bg-[#FFD23D] comic-border comic-shadow transform -rotate-12 opacity-80"></div>
+    <div class="absolute top-[26%] right-[12%] text-3xl font-black text-[#3D6DFF] transform rotate-45 select-none opacity-80">✖</div>
+
+    <!-- --- แถบศูนย์กลางจอ --- -->
+    <div class="absolute top-[45%] left-[3%] w-12 h-12 bg-[#3D6DFF] comic-border comic-shadow transform rotate-45 opacity-90"></div>
+    <div class="absolute top-[48%] left-[25%] text-3xl font-black text-[#FF3D7F] select-none opacity-80">★</div>
+    <div class="absolute top-[42%] left-[50%] -translate-x-1/2 w-14 h-14 bg-[#37C48F] comic-border comic-shadow transform -rotate-6 opacity-80"></div>
+    <div class="absolute top-[46%] right-[25%] w-10 h-10 rounded-full bg-[#FFD23D] comic-border opacity-85"></div>
+    <div class="absolute top-[45%] right-[4%] w-14 h-14 rounded-full bg-[#37C48F] comic-border comic-shadow transform -rotate-12 opacity-90"></div>
+
+    <!-- --- แถบกลางล่าง --- -->
+    <div class="absolute top-[65%] left-[12%] text-4xl font-black text-[#171519] transform -rotate-12 select-none opacity-80">✦</div>
+    <div class="absolute top-[68%] left-[48%] -translate-x-1/2 w-10 h-10 bg-[#FF3D7F] comic-border transform rotate-45 opacity-80"></div>
+    <div class="absolute top-[64%] right-[10%] text-3xl font-black text-[#171519] select-none opacity-80">✖</div>
+
+    <!-- --- แถบล่าง --- -->
+    <div class="absolute bottom-12 left-[5%] w-14 h-14 md:w-16 md:h-16 bg-[#FF3D7F] comic-border comic-shadow transform -rotate-12 opacity-90"></div>
+    <div class="absolute bottom-8 left-[30%] w-12 h-12 rounded-full bg-[#3D6DFF] comic-border transform rotate-12 opacity-85"></div>
+    <div class="absolute bottom-10 left-[50%] -translate-x-1/2 text-4xl font-black text-[#37C48F] select-none opacity-80">★</div>
+    <div class="absolute bottom-16 right-[28%] w-10 h-10 bg-[#FFD23D] comic-border transform rotate-12 opacity-85"></div>
+    <div class="absolute bottom-6 right-[4%] w-12 h-12 md:w-16 md:h-16 bg-[#FFD23D] comic-border comic-shadow transform rotate-45 opacity-90"></div>
+
+</div>
+
+    <!-- ==========================================
+         NAVIGATION BAR 
+    =========================================== -->
+    <nav class="sticky top-0 z-50 bg-[#FFD23D] comic-border border-t-0 border-x-0 px-4 md:px-6 py-4">
+        <div class="max-w-6xl mx-auto flex justify-between items-center gap-2">
+            <a href="index.html" class="bg-[#171519] text-[#FFF6E7] font-bold px-3 py-2 md:px-4 rounded-xl comic-shadow text-xs md:text-sm shrink-0">
+                ← HUB
+            </a>
+            
+            <!-- Links shown on all screen sizes -->
+            <div class="flex gap-3 md:gap-6 font-bold text-xs md:text-lg">
+                <a href="#about" class="hover:text-[#FF3D7F]">ABOUT</a>
+                <a href="#showcase" class="hover:text-[#FF3D7F]">SHOWCASE</a>
+                <a href="#certificates" class="hover:text-[#FF3D7F]">CERTIFICATES</a>
+                <a href="#contact" class="hover:text-[#FF3D7F]">CONTACT</a>
+            </div>
+        </div>
+    </nav>
+
+
+    <!-- ==========================================
+         ABOUT SECTION
+    =========================================== -->
+    <section id="about" class="max-w-5xl mx-auto px-6 py-16">
+        <div class="bg-[#FFF6E7] comic-border comic-shadow-lg rounded-3xl p-8 md:p-12 flex flex-col md:flex-row gap-8 items-center">
+            
+            <!-- Profile Image -->
+            <div class="relative shrink-0">
+                <div class="w-48 h-48 rounded-2xl bg-[#FF3D7F] comic-border overflow-hidden comic-shadow">
+                    <img src="img/sunny.jpg" onerror="this.src='sunny.jpg'" alt="Photo" class="w-full h-full object-cover">
+                </div>
+            </div>
+
+            <!-- Profile Info -->
+            <div class="flex-1 text-center md:text-left">
+                <h1 class="text-4xl md:text-6xl mb-2 font-bold">ซัน โชคอนันต์</h1>
+                <p class="text-xl font-bold text-[#3D6DFF] mb-4">Web & C# Developer</p>
+                <p class="text-lg leading-relaxed">
+                    Helloo graphic design is my passion ผมเขียน HTML และ JavaScript รวมถึงการเขียนโปรแกรมด้วยภาษา C#
+                </p>
+            </div>
+
+        </div>
+    </section>
+
+
+    <!-- ==========================================
+         SHOWCASE / SKILLS SECTION
+    =========================================== -->
+    <section id="showcase" class="bg-[#7209B7] comic-border border-x-0 py-16 px-6">
+        <div class="max-w-5xl mx-auto">
+            <h2 class="text-4xl md:text-5xl text-[#EBF3F5] text-center mb-12">SKILLS</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+
+                <div class="bg-[#EBF3F5] comic-border comic-shadow rounded-2xl p-6">
+                    <div class="text-4xl mb-4">🌐</div>
+                    <h3 class="text-2xl mb-2">HTML</h3>
+                    <p class="text-sm font-medium">การเขียนโครงสร้างหน้าเว็บด้วย Semantic HTML, ฟอร์ม และการจัดเนื้อหาให้อ่านง่าย</p>
+                </div>
+
+                <div class="bg-[#FFB703] comic-border comic-shadow rounded-2xl p-6">
+                    <div class="text-4xl mb-4">⚡</div>
+                    <h3 class="text-2xl mb-2">JavaScript</h3>
+                    <p class="text-sm font-medium">การจัดการ DOM, Event Listeners และสร้างเว็บให้ interactive น่าสนใจ</p>
+                </div>
+
+                <div class="bg-[#4CC9F0] comic-border comic-shadow rounded-2xl p-6">
+                    <div class="text-4xl mb-4">🎯</div>
+                    <h3 class="text-2xl mb-2">C#</h3>
+                    <p class="text-sm font-medium">การเขียนโปรแกรมเชิงวัตถุ (OOP), การจัดการข้อมูลด้วย Collections และ LINQ</p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+    <!-- ==========================================
+         CERTIFICATES SECTION
+    =========================================== -->
+    <section id="certificates" class="max-w-5xl mx-auto px-6 py-16">
+        <h2 class="text-4xl md:text-5xl font-extrabold text-center mb-12">CERTIFICATIONS</h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+
+            <!-- ใบที่ 1 -->
+            <div class="bg-[#EBF3F5] comic-border comic-shadow-lg rounded-2xl p-4 flex flex-col items-center">
+                <div class="w-full rounded-xl comic-border overflow-hidden mb-4 bg-gray-200 flex items-center justify-center min-h-[200px]">
+                    <img src="img/microbit.jpg" 
+                         onerror="this.onerror=null; this.src='img/The_Disruptor_cer_2.png';" 
+                         alt="The Disruptor Certificate" 
+                         class="w-full h-auto object-cover block">
+                </div>
+                <h3 class="text-2xl font-bold text-center">ชนะการแข่งขันโครงงาน micro:bit นิทรรศการวันวิทยาศาสตร์ Science for every Generation</h3>
+            </div>
+
+            <!-- ใบที่ 2 -->
+            <div class="bg-[#EBF3F5] comic-border comic-shadow-lg rounded-2xl p-4 flex flex-col items-center">
+                <div class="w-full rounded-xl comic-border overflow-hidden mb-4 bg-gray-200 flex items-center justify-center min-h-[200px]">
+                    <img src="img/ratchakasem.jpg" 
+                         onerror="this.onerror=null; this.src='img/Technopreneurs_cer_2.png';" 
+                         alt="Technopreneurs Certificate" 
+                         class="w-full h-auto object-cover block">
+                </div>
+                <h3 class="text-2xl font-bold text-center">ชนะอันดับ 2 การแข่งขัน CRU Hackathon มหาวิทยาลัยราชภัฏจันทรเกษม</h3>
+            </div>
+
+        </div>
+    </section>
+
+
+    <!-- ==========================================
+         CONTACT SECTION
+    =========================================== -->
+    <section id="contact" class="max-w-4xl mx-auto px-6 py-16 text-center">
+        <div class="bg-[#F72585] comic-border comic-shadow-lg rounded-3xl p-8 text-white">
+            <h2 class="text-4xl md:text-5xl mb-6 text-[#EBF3F5]">CONNECT WITH ME</h2>
+            <div class="flex justify-center gap-6 flex-wrap">
+                <a href="https://github.com" target="_blank" rel="noopener" class="bg-[#0F172A] text-[#EBF3F5] font-bold px-6 py-3 rounded-xl comic-border comic-shadow">GitHub</a>
+                <a href="https://www.facebook.com" target="_blank" rel="noopener" class="bg-[#7209B7] text-[#EBF3F5] font-bold px-6 py-3 rounded-xl comic-border comic-shadow">Facebook</a>
+                <a href="https://www.instagram.com" target="_blank" rel="noopener" class="bg-[#FFB703] text-[#0F172A] font-bold px-6 py-3 rounded-xl comic-border comic-shadow">Instagram</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- JavaScript Script -->
+    <script src="js/script.js"></script>
+</body>
+</html>
