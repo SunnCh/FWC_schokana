@@ -1,0 +1,55 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body, html {
+    height: 100%;
+    font-family: sans-serif;
+}
+
+.parallax {
+    position: relative;
+    height: 100vh;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.img1 {
+    background-image: url("https://media.tenor.com/dOgXUN7aarYAAAAM/deadlock-mina.gif");
+}
+
+.img2 {
+    background-image: url("https://preview.redd.it/three-theories-on-john-rod-s-name-v0-99vmh6s7dvdh1.png?width=515&format=png&auto=webp&s=d3d12399094e2344734ab38fc6e267fe9fb07a3d");
+}
+
+/* Centered Text Caption */
+.caption {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.text {
+    background-color: rgba(0, 0, 0, 0.75);
+    color: white;
+    padding: 16px 28px;
+    font-size: 22px;
+    letter-spacing: 2px;
+    border-radius: 4px;
+    display: inline-block;
+}
+
+/* Black Content Section */
+.content-block {
+    background-color: black;
+    color: white;
+    padding: 100px 20px;
+    text-align: center;
+    font-size: 20px;
+}
