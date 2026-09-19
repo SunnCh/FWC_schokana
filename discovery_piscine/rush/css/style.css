@@ -67,7 +67,7 @@ h1, h2, h3, h4, .font-heading {
 .peek-avatar-behind {
   position: absolute;
   left: 50%;
-  top: 20px; /* วางจุดตั้งต้นให้อยู่ต่ำลงมาจากขอบบนการ์ด */
+  top: -120px; /* วางจุดตั้งต้นให้อยู่ต่ำลงมาจากขอบบนการ์ด */
   width: 85%;
   max-width: 300px;
   height: auto;
